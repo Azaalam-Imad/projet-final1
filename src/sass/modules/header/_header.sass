@@ -1,3 +1,4 @@
+
 nav
     height: 10vh
     width: 100vw
@@ -7,6 +8,8 @@ nav
     animation: navbar
     animation-timeline: scroll()
     z-index: 9999
+    .logo
+        
 
 @keyframes navbar 
     
@@ -31,6 +34,28 @@ nav
         width: 100vw
         height: 100vh
         filter: opacity(0.5)
+    .descreption-carusel
+        z-index: 10
+        left: 50%
+        top: 50%
+        transform: translate(-50% , -50%)
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            color: white
+        p
+            color: white
+        button
+            border: 2px solid #ec9a1d
+            width: 15px 70px
+            padding:10px 30px
+            border-radius: 30px
+            background-color: transparent
+            color: white
+            transition: 0.5s
+            &:hover
+                background-color: #ec9a1d
 
 
     

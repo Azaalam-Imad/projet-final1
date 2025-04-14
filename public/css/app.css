@@ -11867,7 +11867,6 @@ nav {
   animation-timeline: scroll();
   z-index: 9999;
 }
-
 @keyframes navbar {
   0% {
     background-color: transparent;
@@ -11891,6 +11890,33 @@ nav {
   width: 100vw;
   height: 100vh;
   filter: opacity(0.5);
+}
+.carousel-item .descreption-carusel {
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-item .descreption-carusel h2, .carousel-item .descreption-carusel .h2 {
+  color: white;
+}
+.carousel-item .descreption-carusel p {
+  color: white;
+}
+.carousel-item .descreption-carusel button {
+  border: 2px solid #ec9a1d;
+  width: 15px 70px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+}
+.carousel-item .descreption-carusel button:hover {
+  background-color: #ec9a1d;
 }
 
 /*# sourceMappingURL=app.css.map */
