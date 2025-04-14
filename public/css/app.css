@@ -11919,4 +11919,15 @@ nav {
   background-color: #ec9a1d;
 }
 
+.child-h-section2 {
+  background-color: #fffaf3;
+}
+.child-h-section2 .img-section1 img {
+  width: 40vw;
+}
+
+.bi-check2-all {
+  color: #fd7e14;
+}
+
 /*# sourceMappingURL=app.css.map */
