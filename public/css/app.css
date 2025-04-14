@@ -11930,4 +11930,35 @@ nav {
   color: #fd7e14;
 }
 
+span {
+  color: #fd7e14;
+}
+
+.card-section2 {
+  background-color: #eeecec !important;
+  width: 25vw !important;
+  height: 38vh;
+  border: none;
+  transition: 0.5s;
+}
+.card-section2 .card-body h1, .card-section2 .card-body .h1 {
+  color: #fd7e14;
+}
+.card-section2 .card-body h6, .card-section2 .card-body .h6 {
+  color: black !important;
+}
+.card-section2 .card-body p {
+  color: #6b6b6b;
+}
+.card-section2:hover {
+  background-color: #fd7e14 !important;
+  padding-top: unset !important;
+}
+.card-section2:hover h1, .card-section2:hover .h1, .card-section2:hover p {
+  color: white;
+}
+.card-section2:hover h6, .card-section2:hover .h6 {
+  color: white !important;
+}
+
 /*# sourceMappingURL=app.css.map */
