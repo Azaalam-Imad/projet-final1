@@ -11857,6 +11857,28 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Satisfy";
+  src: url(../fonts/Satisfy/Satisfy-Regular.ttf);
+}
+h1, .h1, h2, .h2, h3, .h3, h5, .h5 {
+  font-family: "Satisfy";
+  font-weight: bold;
+}
+
+h4, .h4 {
+  background-color: rgba(255, 177, 59, 0.137254902);
+  color: #ffb03b;
+  font-size: 17px;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+section {
+  margin-top: 10vh;
+  gap: 10px;
+}
+
 nav {
   height: 10vh;
   width: 100vw;
@@ -11867,15 +11889,16 @@ nav {
   animation-timeline: scroll();
   z-index: 9999;
 }
+nav .logo img {
+  width: 10vw;
+}
+
 @keyframes navbar {
   0% {
     background-color: transparent;
   }
-  30% {
-    background-color: rgba(0, 0, 0, 0.5137254902);
-  }
   100% {
-    background-color: rgba(0, 0, 0, 0.5137254902);
+    background-color: rgba(0, 0, 0, 0.7254901961);
   }
 }
 .links a {
@@ -11902,6 +11925,10 @@ nav {
 }
 .carousel-item1 .descreption-carusel h2, .carousel-item1 .descreption-carusel .h2 {
   color: white;
+  font-size: 45px;
+}
+.carousel-item1 .descreption-carusel h2 span, .carousel-item1 .descreption-carusel .h2 span {
+  color: #ec9a1d;
 }
 .carousel-item1 .descreption-carusel p {
   color: white;
@@ -11961,6 +11988,91 @@ span {
   color: white !important;
 }
 
+.menu-section3 {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: auto;
+  gap: 5vh;
+}
+.menu-section3 .title-menu {
+  font-weight: bold;
+  margin: unset;
+  margin-right: 15vw;
+}
+
+.list-menu:hover {
+  color: #ffb03b;
+  cursor: pointer;
+}
+
+.input-menu {
+  display: none !important;
+}
+
+#Specialty:checked ~ .menu1 {
+  display: none !important;
+}
+
+#Specialty:checked ~ .menu8 {
+  display: none !important;
+}
+
+#Specialty:checked ~ .menu9 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu2 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu3 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu5 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu6 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu7 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu8 {
+  display: none !important;
+}
+
+#Salads:checked ~ .menu9 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu2 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu3 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu4 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu6 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu7 {
+  display: none !important;
+}
+
+#Starters:checked ~ .menu9 {
+  display: none !important;
+}
+
 .container-special {
   height: 45vh !important;
 }
@@ -11987,7 +12099,7 @@ span {
   width: 20vw;
 }
 
-input {
+.input-section4 {
   display: none;
 }
 
@@ -12017,9 +12129,21 @@ input {
   background-size: 100vw;
 }
 
-input {
-  width: 30vw !important;
-  height: 10vh !important;
+.img-form {
+  background-color: black;
+  width: 80vw;
+  height: 80vh;
+}
+
+.form-control {
+  width: 17vw !important;
+  border-radius: none !important;
+  outline-color: #fd7e14 !important;
+}
+
+textarea {
+  height: 20vh;
+  width: 62.5vw;
 }
 
 /*# sourceMappingURL=app.css.map */
