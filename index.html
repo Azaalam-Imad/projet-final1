@@ -7,10 +7,57 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-<header>
-    <head></head>
-    <nav></nav>
-    <div class="carousel"></div>
+<header class="bg-black">
+   
+    <nav class="d-flex align-items-center justify-content-around">
+        <div class="logo">
+            <h2>Delicious</h2>
+        </div>
+        <div class="links d-flex align-items-center gap-4 ">
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Menu">Menu</a>
+            <a href="Specials">Specials</a>
+            <a href="Events">Events</a>
+            <a href="Chefs">Chefs</a>
+            <a href="Gallery">Gallery</a>
+            <a href="Dropdown">dropdown</a>
+            <a href="Contact">Contact</a>
+        </div>
+
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="./public/images/slide/slide-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="./public/images/slide/slide-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="./public/images/slide/slide-3.jpg" class="d-block w-100" alt="...">
+            <div class="position-absolute">
+                <h2></h2>
+                <p></p>
+                <div><button>Our menu</button><button>Book a Table</button></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
 </header>
 
 

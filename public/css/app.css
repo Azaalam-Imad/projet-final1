@@ -11857,4 +11857,40 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+nav {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  animation: navbar;
+  animation-timeline: scroll();
+  z-index: 9999;
+}
+
+@keyframes navbar {
+  0% {
+    background-color: transparent;
+  }
+  30% {
+    background-color: rgba(0, 0, 0, 0.5137254902);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5137254902);
+  }
+}
+.links a {
+  text-decoration: none;
+  color: #f3f2f2;
+}
+.links a:hover {
+  color: #ec9a1d;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 100vh;
+  filter: opacity(0.5);
+}
+
 /*# sourceMappingURL=app.css.map */
