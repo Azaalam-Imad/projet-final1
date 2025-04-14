@@ -12207,4 +12207,88 @@ textarea {
   background-size: cover;
 }
 
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 23vw);
+  grid-template-rows: repeat(2, 35vh);
+  gap: 3px;
+}
+.images div {
+  width: 100%;
+  height: 100%;
+}
+.images .g-img1 {
+  background-image: url(../images/gallery/gallery-1.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img1:hover {
+  background-size: 110% 110%;
+  background-position: center;
+}
+.images .g-img2 {
+  background-image: url(../images/gallery/gallery-2.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img2:hover {
+  background-size: 110% 110%;
+}
+.images .g-img3 {
+  background-image: url(../images/gallery/gallery-3.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img3:hover {
+  background-size: 110% 110%;
+}
+.images .g-img4 {
+  background-image: url(../images/gallery/gallery-4.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img4:hover {
+  background-size: 110% 110%;
+}
+.images .g-img5 {
+  background-image: url(../images/gallery/gallery-5.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img5:hover {
+  background-size: 110% 110%;
+}
+.images .g-img6 {
+  background-image: url(../images/gallery/gallery-6.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img6:hover {
+  background-size: 110% 110%;
+}
+.images .g-img7 {
+  background-image: url(../images/gallery/gallery-7.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img7:hover {
+  background-size: 110% 110%;
+}
+.images .g-img8 {
+  background-image: url(../images/gallery/gallery-8.jpg);
+  background-size: 100% 100%;
+  transition: 0.5s;
+  background-position: center;
+}
+.images .g-img8:hover {
+  background-size: 110% 110%;
+}
+
 /*# sourceMappingURL=app.css.map */
