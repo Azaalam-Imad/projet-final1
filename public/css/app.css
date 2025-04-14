@@ -12159,9 +12159,33 @@ span {
 }
 
 .img-form {
-  background-color: black;
+  background-color: #f9f9f9;
   width: 80vw;
   height: 80vh;
+  display: flex;
+}
+.img-form input {
+  width: 17vw;
+  height: 8vh;
+  padding: 15px;
+  outline-color: #fd7e14;
+  border: 1px solid #dfdfdf;
+}
+.img-form textarea {
+  width: 53.5vw;
+  padding: 17px;
+  outline-color: #fd7e14;
+  border: 1px solid #dfdfdf;
+}
+.img-form button {
+  color: white;
+  background-color: #fd7e14;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+}
+.img-form button:hover {
+  background-color: rgba(253, 125, 20, 0.6588235294);
 }
 
 .form-control {
@@ -12173,6 +12197,14 @@ span {
 textarea {
   height: 20vh;
   width: 62.5vw;
+}
+
+.tchild-img-form {
+  width: 40%;
+  height: 100%;
+  background-image: url(../images/chefs-bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=app.css.map */
