@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./public/css/app.css" />
   </head>
   <body>
+    <!-- heder -->
     <header class="bg-black">
       <!-- navbar -->
       <nav class="d-flex align-items-center justify-content-around">
@@ -228,10 +229,15 @@
       </div>
       <input class="input-menu" type="radio" name="list-menu" id="All" />
       <div class="menu-section3">
-        <input class="input-menu" type="radio" name="list-menu" id="Specialty"/>
+        <input
+          class="input-menu"
+          type="radio"
+          name="list-menu"
+          id="Specialty"
+        />
         <input class="input-menu" type="radio" name="list-menu" id="Salads" />
         <input class="input-menu" type="radio" name="list-menu" id="Starters" />
-        <div class=" menu9 d-flex align-items-center">
+        <div class="menu9 d-flex align-items-center">
           <img src="./public/images/specials-1.jpg" alt="" class="w-25" />
 
           <div>
@@ -242,7 +248,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-        
+
         <div class="menu1 d-flex align-items-center">
           <img src="./public/images/specials-2.jpg" alt="" class="w-25" />
 
@@ -254,7 +260,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-        
+
         <div class="menu2 d-flex align-items-center">
           <img src="./public/images/specials-3.jpg" alt="" class="w-25" />
 
@@ -266,7 +272,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-        
+
         <div class="menu3 d-flex align-items-center">
           <img src="./public/images/specials-4.jpg" alt="" class="w-25" />
 
@@ -278,7 +284,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-       
+
         <div class="menu4 d-flex align-items-center">
           <img src="./public/images/specials-5.jpg" alt="" class="w-25" />
 
@@ -290,7 +296,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-       
+
         <div class="menu5 d-flex align-items-center">
           <img src="./public/images/specials-1.jpg" alt="" class="w-25" />
 
@@ -302,7 +308,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-       
+
         <div class="menu6 d-flex align-items-center">
           <img src="./public/images/specials-2.jpg" alt="" class="w-25" />
 
@@ -314,7 +320,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-       
+
         <div class="menu7 d-flex align-items-center">
           <img src="./public/images/specials-3.jpg" alt="" class="w-25" />
 
@@ -326,7 +332,7 @@
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
-        
+
         <div class="menu8 d-flex align-items-center">
           <img src="./public/images/specials-4.jpg" alt="" class="w-25" />
 
@@ -512,7 +518,152 @@
     </section>
 
     <!-- section 5  events -->
-    <section class="event"></section>
+    <section class="event d-flex align-items-center">
+      <div class=" d-flex align-items-center filtr-evnt position-relative">
+        <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators carousel-indicators1">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner ">
+          
+          <div class="carousel-item carousel-item2 active d-flex gap-3 w-75 ">
+            <img
+              src="./public/images/event-private.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="w-50 d-flex flex-column gap-2">
+              <h3 class="text-white">
+                Costume parties
+              </h3>
+              <span class="text-white fs-2 fw-bold prix-event">
+                $189
+              </span>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <p class="text-white">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item2  d-flex gap-3 w-75 ">
+            <img
+              src="./public/images/event-birthday.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="w-50 d-flex flex-column gap-2">
+              <h3 class="text-white">
+                Costume parties
+              </h3>
+              <span class="text-white fs-2 fw-bold prix-event">
+                $189
+              </span>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <p class="text-white">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item2  d-flex gap-3 w-75 ">
+            <img
+              src="./public/images/event-custom.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="w-50 d-flex flex-column gap-2">
+              <h3 class="text-white">
+                Costume parties
+              </h3>
+              <span class="text-white fs-2 fw-bold prix-event">
+                $189
+              </span>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <p class="text-white">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <p class="text-white">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      
+      </div>
+    </section>
     <!-- section 6  -->
     <section class="d-flex flex-column align-items-center">
       <h4>Book A Table</h4>

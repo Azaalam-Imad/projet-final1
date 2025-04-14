@@ -12127,6 +12127,35 @@ span {
   background-image: url(../images/testimonials-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
+  height: 80vh;
+}
+
+.carousel-item2 {
+  margin-left: 10vw;
+}
+.carousel-item2 img {
+  width: 40vw !important;
+}
+
+.carousel-indicators1 {
+  position: absolute;
+  bottom: -70px;
+}
+.carousel-indicators1 button {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  background-color: #ffb03b !important;
+}
+
+.prix-event {
+  border-bottom: 2px solid #ff933b;
+  width: 90px;
+}
+
+.filtr-evnt {
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.8352941176);
 }
 
 .img-form {
