@@ -10,11 +10,14 @@
     <!-- heder -->
     <header class="bg-black">
       <!-- navbar -->
-      <nav class="d-flex align-items-center justify-content-around">
+
+      <nav class="d-flex align-items-center justify-content-around ">
         <div class="logo">
           <img src="./public/images/icon.png" alt="" />
         </div>
+        <input type="checkbox" id="menu-nav" class="menu-nav">
         <div class="links d-flex align-items-center gap-4">
+          <label for="menu-nav" class="closer-nav"><i class="bi bi-x text-white  "></i></label>
           <a href="Home">Home</a>
           <a href="About">About</a>
           <a href="Menu">Menu</a>
@@ -25,6 +28,7 @@
           <a href="Dropdown">dropdown</a>
           <a href="Contact">Contact</a>
         </div>
+        <label for="menu-nav" class="menu-navl"><i class="bi bi-list text-white"></i></label>
       </nav>
 
       <!-- carousel -->
@@ -70,7 +74,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 buton-nav">
                 <button>Our menu</button><button>Book a Table</button>
               </div>
             </div>
@@ -89,7 +93,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 buton-nav">
                 <button>Our menu</button><button>Book a Table</button>
               </div>
             </div>
@@ -108,7 +112,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 buton-nav">
                 <button>Our menu</button><button>Book a Table</button>
               </div>
             </div>
@@ -894,40 +898,40 @@
        
       </section>
       <!-- footer -->
-      <footer class="d-flex flex-column align-items-center mt-5 pt-5 ">
+      <footer class="d-flex flex-column align-items-center mt-5 pt-5 " style="background-color: rgb(44, 19, 6);">
         <div class=" d-flex justify-content-between gap-5 border-bottom">
             <div class=" d-flex gap-3  ">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h5>Address:</h5>
-                  <p class="w-75">A108 Adam Street, New York, NY 535022</p>
+                  <h5 class="text-white">Address:</h5>
+                  <p class="text-white" class="w-75">A108 Adam Street, New York, NY 535022</p>
                 </div>
             </div>
             <div class=" d-flex gap-3 ">
                     <i class="bi bi-telephone icon"></i>
                     <div>
-                      <h5>Contact</h5>
-                      <p><b>Phone:</b>  +1 5589 55488 55</p>
-                      <p><b>Email:</b> info@example.com</p>
+                      <h5 class="text-white">Contact</h5>
+                      <p class="text-white"><b>Phone:</b>  +1 5589 55488 55</p>
+                      <p class="text-white"><b>Email:</b> info@example.com</p>
                     </div>
             </div>
             <div class=" d-flex gap-3 ">
                 <i class="bi bi-clock icon"></i>
                 <div>
-                  <h5>Opening Hours</h5>
-                  <p><b>Mon-Sat:</b>   11AM - 23PM</p>
-                  <p><b>Sunday:</b>  Closed</p>
+                  <h5 class="text-white">Opening Hours</h5>
+                  <p class="text-white"><b>Mon-Sat:</b>   11AM - 23PM</p>
+                  <p class="text-white"><b>Sunday:</b>  Closed</p>
                 </div>
             </div>
             <div class=" d-flex  ">
                     
                     <div>
-                      <h5>Follow Us</h5>
+                      <h5 class="text-white">Follow Us</h5>
                       <div class="d-flex gap-3">
-                        <i class="bi bi-twitter-x text-secondary"></i>
-                        <i class="bi bi-facebook text-secondary"></i>
-                        <i class="bi bi-instagram text-secondary"></i>
-                        <i class="bi bi-linkedin text-secondary"></i>
+                        <i  class="bi bi-twitter-x text-secondary text-white"></i>
+                        <i class="bi bi-facebook text-secondary text-white"></i>
+                        <i class="bi bi-instagram text-secondary text-white"></i>
+                        <i class="bi bi-linkedin text-secondary text-white"></i>
                       </div>
                     </div>
                  </div>
@@ -935,8 +939,8 @@
         </div>
         
         <div class="d-flex flex-column align-items-center pt-5">
-            <p>© Copyright Delicious All Rights Reserved</p>
-            <p>Designed by <span>BootstrapMade</span></p>
+            <p class="text-white">© Copyright Delicious All Rights Reserved</p>
+            <p class="text-white">Designed by <span>BootstrapMade</span></p>
         </div>
       </footer>
 

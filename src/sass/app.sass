@@ -21,9 +21,16 @@ section
     margin-top: 10vh
     gap: 10px
 
+@import ../../node_modules/bootstrap/scss/functions
+@import ../../node_modules/bootstrap/scss/variables
 
 
 @import ./variables
+
+$mar: rgb(130, 81, 57)
+$custom-colors: ("mar": $mar)
+$theme-colors: map-merge($custom-colors , $theme-colors)
+
 @import ./modules/header/_header
 @import ./modules/section/_section1
 @import ./modules/section/_section2

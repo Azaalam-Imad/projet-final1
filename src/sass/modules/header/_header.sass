@@ -17,6 +17,8 @@ nav
     
     0%
         background-color: transparent
+    20%
+        background-color: #000000b9
     
 
 
@@ -52,7 +54,7 @@ nav
             color: white
         button
             border: 2px solid #ec9a1d
-            width: 15px 70px
+            
             padding:10px 30px
             border-radius: 30px
             background-color: transparent
@@ -60,6 +62,69 @@ nav
             transition: 0.5s
             &:hover
                 background-color: #ec9a1d
+.menu-navl
+    display: none
+    i
+            font-size: 25px !important
+.menu-nav
+    display: none
+.closer-nav
+    display: none
+    
+@media   ( max-width:425px  )
+    .links
+        position: absolute
+        background-color: white
+        width: 90vw
+        height: 80vh
+        top: -200vw
+        flex-direction: column
+        align-items: unset !important
+        padding: 15px 15px 15px 25px
+        border-radius: 10px
+        
+        a
+            color: black
+    .menu-nav
+        display: none
+        
+    .menu-navl
+     display: block
+    .closer-nav
+        display: block
+        position: absolute
+        right: 0px
+        top:  -60px
+        i
+            font-size: 40px
+    #menu-nav
+        &:checked + .links
+            top: 70px
+        &:checked ~ .menu-navl
+            display: none
+    .descreption-carusel
+        button
+            width: 164px !important
+        h2
+            font-size: 35px !important
+        p
+            text-align: center !important
+    nav
+        display: flex !important
+        justify-content: space-between !important
+    .logo
+        img
+            width: 20vw !important
+    .buton-nav
+        flex-direction: column !important
+
+
+            
+    
+
+
+
+    
 
 
     
