@@ -25,11 +25,19 @@ section
 @import ../../node_modules/bootstrap/scss/variables
 
 
-@import ./variables
 
 $mar: rgb(130, 81, 57)
-$custom-colors: ("mar": $mar)
-$theme-colors: map-merge($custom-colors , $theme-colors)
+
+
+
+$colors: ("mar": $mar )
+
+$theme-colors: map-merge($colors , $theme-colors)
+
+
+@import ./variables
+
+
 
 @import ./modules/header/_header
 @import ./modules/section/_section1

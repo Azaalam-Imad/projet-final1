@@ -12253,7 +12253,7 @@ span {
   background-image: url(../images/testimonials-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 80vh;
+  height: 80%;
 }
 
 .carousel-item2 {
@@ -12284,6 +12284,49 @@ span {
   background-color: rgba(0, 0, 0, 0.8352941176);
 }
 
+.imf-crus-sect5 {
+  width: 40% !important;
+}
+
+.BUTON-CARUSEL-SECTION5 {
+  position: absolute;
+  bottom: -50px;
+}
+.BUTON-CARUSEL-SECTION5 button {
+  width: 22px !important;
+  height: 22px !important;
+  background-color: #ff933b !important;
+  border-radius: 50%;
+}
+
+@media (max-width: 425px) {
+  .event {
+    height: auto !important;
+    margin-top: 160vh !important;
+    background-size: 100% 100%;
+  }
+  .filtr-evnt {
+    height: auto !important;
+    padding: 15px !important;
+    padding-top: 40px !important;
+  }
+  .cont-mob {
+    display: unset !important;
+    width: 100vw !important;
+    padding: unset !important;
+  }
+  .cont-mob img {
+    width: 100% !important;
+  }
+  .imf-crus-sect5 {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .w-section5 {
+    width: 91vw !important;
+    margin-top: 30px;
+  }
+}
 .img-form {
   background-color: #f9f9f9;
   width: 80vw;
@@ -12335,7 +12378,7 @@ textarea {
 
 @media (max-width: 425px) {
   .containr-section6 {
-    margin-top: 145vh;
+    margin-top: 20vh;
   }
   .img-form {
     flex-direction: column !important;
@@ -12563,6 +12606,32 @@ textarea {
 }
 .right-contact button:hover {
   background-color: rgba(253, 125, 20, 0.6588235294);
+}
+
+@media (max-width: 425px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .left-contact {
+    width: 90vw !important;
+  }
+  .contact .right-contact {
+    width: 90vw !important;
+  }
+  .contact .right-contact .child-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .info-foter {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 20px;
+  }
+  .info-foter i {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
