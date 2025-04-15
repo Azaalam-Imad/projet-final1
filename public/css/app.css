@@ -12340,11 +12340,12 @@ textarea {
   .img-form {
     flex-direction: column !important;
     width: 100vw !important;
+    height: auto !important;
+    align-items: center;
   }
   .tchild-img-form {
-    width: 100vw !important;
+    width: 90% !important;
     height: 90vh !important;
-    background-color: red;
   }
   .child-form-section6 {
     flex-direction: column !important;
@@ -12440,6 +12441,16 @@ textarea {
   background-size: 110% 110%;
 }
 
+@media (max-width: 425px) {
+  .container-section7 {
+    margin-top: 20vh !important;
+  }
+  .images {
+    grid-template-columns: 91vw;
+    grid-template-rows: repeat(8, 50vh);
+    gap: 3px;
+  }
+}
 .cart-shef {
   position: absolute;
   width: 85%;
