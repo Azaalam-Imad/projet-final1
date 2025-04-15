@@ -12030,6 +12030,18 @@ nav .logo img {
   color: #fd7e14;
 }
 
+@media (max-width: 425px) {
+  .child-h-section2 {
+    flex-direction: column;
+    padding: 5px !important;
+  }
+  .child-h-section2 .img-section1 img {
+    width: 100% !important;
+  }
+  .child-h-section2 .desc-section1 {
+    width: 100% !important;
+  }
+}
 span {
   color: #fd7e14;
 }
@@ -12061,6 +12073,17 @@ span {
   color: white !important;
 }
 
+@media (max-width: 425px) {
+  .cont-section2 {
+    flex-direction: column;
+  }
+  .cont-section2 .card-section2 {
+    width: 100% !important;
+  }
+  .why-us {
+    padding: 10px;
+  }
+}
 .menu-section3 {
   display: grid;
   grid-template-columns: repeat(2, 40vw);
