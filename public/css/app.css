@@ -12235,7 +12235,6 @@ span {
     width: 100% !important;
   }
   .specials2 {
-    flex-direction: column;
     flex-direction: column-reverse !important;
     width: 90vw !important;
     left: -20px !important;
@@ -12334,6 +12333,29 @@ textarea {
   background-size: cover;
 }
 
+@media (max-width: 425px) {
+  .containr-section6 {
+    margin-top: 145vh;
+  }
+  .img-form {
+    flex-direction: column !important;
+    width: 100vw !important;
+  }
+  .tchild-img-form {
+    width: 100vw !important;
+    height: 90vh !important;
+    background-color: red;
+  }
+  .child-form-section6 {
+    flex-direction: column !important;
+  }
+  .child-form-section6 input {
+    width: 90vw;
+  }
+  textarea {
+    width: 90vw !important;
+  }
+}
 .images {
   display: grid;
   grid-template-columns: repeat(4, 23vw);
