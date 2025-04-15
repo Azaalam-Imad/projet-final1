@@ -12169,6 +12169,13 @@ span {
   display: none !important;
 }
 
+@media (max-width: 425px) {
+  .menu-section3 {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    padding: 10px;
+  }
+}
 .container-special {
   height: 45vh !important;
 }
