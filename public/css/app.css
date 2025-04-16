@@ -11888,7 +11888,7 @@ section {
   0% {
     transform: translate(-50%);
   }
-  70% {
+  60% {
     transform: translate(0);
   }
 }
@@ -11901,7 +11901,7 @@ section {
   0% {
     transform: rotateY(100deg);
   }
-  81% {
+  70% {
     transform: rotateY(0deg);
   }
 }
@@ -11914,7 +11914,7 @@ section {
   0% {
     transform: rotateY(100deg);
   }
-  81% {
+  70% {
     transform: rotateY(0deg);
   }
 }
@@ -11927,7 +11927,7 @@ section {
   0% {
     transform: translate(-50%);
   }
-  31% {
+  30% {
     transform: translate(0);
   }
 }
@@ -11956,6 +11956,11 @@ nav {
 }
 nav .logo img {
   width: 10vw;
+}
+
+.pos {
+  position: relative;
+  z-index: 61;
 }
 
 @keyframes navbar {
@@ -12089,6 +12094,17 @@ nav .logo img {
 }
 .child-h-section2 .img-section1 img {
   width: 40vw;
+}
+
+.scroll {
+  width: 40px;
+  height: 40px;
+  background-color: #fd7e14;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  border-radius: 10px;
+  z-index: 20;
 }
 
 .bi-check2-all {
