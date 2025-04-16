@@ -5,30 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css" />
+    
   </head>
   <body>
     <!-- heder -->
-    <header class="bg-black">
+    <header class="bg-black" id="Home">
       <!-- navbar -->
 
-      <nav class="d-flex align-items-center justify-content-around ">
+      <nav class="d-flex align-items-center justify-content-around">
         <div class="logo">
           <img src="./public/images/icon.png" alt="" />
         </div>
-        <input type="checkbox" id="menu-nav" class="menu-nav">
+        <input type="checkbox" id="menu-nav" class="menu-nav" />
         <div class="links d-flex align-items-center gap-4">
-          <label for="menu-nav" class="closer-nav"><i class="bi bi-x text-white  "></i></label>
-          <a href="Home">Home</a>
-          <a href="About">About</a>
-          <a href="Menu">Menu</a>
-          <a href="Specials">Specials</a>
-          <a href="Events">Events</a>
-          <a href="Chefs">Chefs</a>
-          <a href="Gallery">Gallery</a>
-          <a href="Dropdown">dropdown</a>
-          <a href="Contact">Contact</a>
+          <label for="menu-nav" class="closer-nav"
+            ><i class="bi bi-x text-white"></i
+          ></label>
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Menu">Menu</a>
+          <a href="#Specials">Specials</a>
+          <a href="#Events">Events</a>
+          <a href="#Chefs">Chefs</a>
+          <a href="#Gallery">Gallery</a>
+          <a
+            href="#Dropdown"
+            class="position-relative dropdown"
+            data-bs-toggle="dropdown"
+            >dropdown <i class="bi bi-chevron-down toggle-dropdown"></i>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-black" href="#">dropdown 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black" href="#">dropdown 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black" href="#">dropdown 3</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black" href="#">dropdown 4</a>
+              </li>
+            </ul></a
+          >
+          <a href="#Contact">Contact</a>
         </div>
-        <label for="menu-nav" class="menu-navl"><i class="bi bi-list text-white"></i></label>
+        <label for="menu-nav" class="menu-navl"
+          ><i class="bi bi-list text-white"></i
+        ></label>
       </nav>
 
       <!-- carousel -->
@@ -142,12 +166,16 @@
     <!-- section 1 About-->
     <section
       class="h-section1 d-flex align-items-center justify-content-center"
+      id="About" 
     >
       <div
-        class="child-h-section2 d-flex align-items-center justify-content-center p-5 gap-4 "
+        class="child-h-section2 d-flex align-items-center justify-content-center p-5 gap-4"
       >
-        <div class="img-section1">
+        <div  class="img-section1 position-relative"  >
           <img src="./public/images/about.jpg" alt="" />
+          <a href="" class="play-section1"
+            ><i class="bi bi-play-circle-fill"></i
+          ></a>
         </div>
         <div class="w-50 desc-section1">
           <h3>
@@ -200,7 +228,7 @@
         </div>
         <div class="card pt-4 card-section2">
           <div class="card-body d-flex flex-column gap-2">
-            <h1>01</h1>
+            <h1>02</h1>
             <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum</h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -210,7 +238,7 @@
         </div>
         <div class="card pt-4 card-section2">
           <div class="card-body d-flex flex-column gap-2">
-            <h1>01</h1>
+            <h1>03</h1>
             <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum</h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -222,7 +250,7 @@
     </section>
 
     <!-- section 3 menu -->
-    <section class="d-flex flex-column align-items-center">
+    <section class="d-flex flex-column align-items-center " id="Menu">
       <h4>Menu</h4>
       <h2>Check Our Tasty <span>Menu</span></h2>
       <div class="d-flex gap-3 pt-4 pb-3">
@@ -246,14 +274,14 @@
 
           <div>
             <div class="d-flex justify-content-between">
-              <p class="title-menu">Lobster Bisque</p>
+              <p class="title-menu">Lobster Bisque </p>
               <span>$5.95</span>
             </div>
             <p>Lorem, deren, trataro, filede, nerada</p>
           </div>
         </div>
 
-        <div class="menu1 d-flex align-items-center">
+        <div class="menu1 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-2.jpg" alt="" class="w-25" />
 
           <div>
@@ -265,7 +293,7 @@
           </div>
         </div>
 
-        <div class="menu2 d-flex align-items-center">
+        <div class="menu2 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-3.jpg" alt="" class="w-25" />
 
           <div>
@@ -277,7 +305,7 @@
           </div>
         </div>
 
-        <div class="menu3 d-flex align-items-center">
+        <div class="menu3 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-4.jpg" alt="" class="w-25" />
 
           <div>
@@ -289,7 +317,7 @@
           </div>
         </div>
 
-        <div class="menu4 d-flex align-items-center">
+        <div class="menu4 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-5.jpg" alt="" class="w-25" />
 
           <div>
@@ -301,7 +329,7 @@
           </div>
         </div>
 
-        <div class="menu5 d-flex align-items-center">
+        <div class="menu5 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-1.jpg" alt="" class="w-25" />
 
           <div>
@@ -313,7 +341,7 @@
           </div>
         </div>
 
-        <div class="menu6 d-flex align-items-center">
+        <div class="menu6 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-2.jpg" alt="" class="w-25" />
 
           <div>
@@ -325,7 +353,7 @@
           </div>
         </div>
 
-        <div class="menu7 d-flex align-items-center">
+        <div class="menu7 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-3.jpg" alt="" class="w-25" />
 
           <div>
@@ -337,7 +365,7 @@
           </div>
         </div>
 
-        <div class="menu8 d-flex align-items-center">
+        <div class="menu8 aimation2 d-flex align-items-center">
           <img src="./public/images/specials-4.jpg" alt="" class="w-25" />
 
           <div>
@@ -351,7 +379,7 @@
       </div>
     </section>
     <!-- section 4 Specials -->
-    <section class="d-flex flex-column align-items-center gap-3">
+    <section id="Specials" class="d-flex flex-column align-items-center gap-2 px-2 animation3">
       <h4>Specials</h4>
       <h2>Check <span>Our Specials</span></h2>
 
@@ -366,6 +394,7 @@
           <label for="Iusto" class="Iusto"><p>Iusto ut expedita aut</p></label>
         </div>
         <div class="position-relative px-5 cont-section4">
+         <div class="siz position-relative">
           <input class="input-section4" type="radio" name="specia" id="Modi" />
           <div
             class="specials2 specials21 d-flex gap-4 align-items-center bg-white"
@@ -466,7 +495,8 @@
             class="specials2 specials24 d-flex gap-4 align-items-center bg-white"
           >
             <div class="w-100 d-flex flex-column gap-2">
-              <h3>Et blanditiis nemo veritatis excepturi</h3>
+              <h3>Impedit facilis occaecati odio neque aperiam sit
+              </h3>
               <p>
                 <i
                   >Qui laudantium consequatur laborum sit qui ad sapiente dila
@@ -494,7 +524,7 @@
             class="specials2 specials25 d-flex gap-4 align-items-center bg-white"
           >
             <div class="w-100 d-flex flex-column gap-2">
-              <h3>Et blanditiis nemo veritatis excepturi</h3>
+              <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
               <p>
                 <i
                   >Qui laudantium consequatur laborum sit qui ad sapiente dila
@@ -517,132 +547,151 @@
               />
             </div>
           </div>
+         </div>
         </div>
       </div>
     </section>
 
     <!-- section 5  events -->
-    <section class="event d-flex align-items-center">
-      <div class=" d-flex align-items-center filtr-evnt  w-100 ">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <section id="Events" class="event d-flex align-items-center animation3">
+      <div class="d-flex align-items-center filtr-evnt w-100">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators BUTON-CARUSEL-SECTION5">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="d-flex gap-5 px-5 cont-mob">
-                  <img  class="imf-crus-sect5"
-                src="./public/images/event-private.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-               <div class="w-50 d-flex flex-column gap-2 w-section5"> 
-                <h3 class="text-white">
-                  Costume parties
-                </h3>
-                <span class="text-white fs-2 fw-bold prix-event">
-                  $189
-                </span>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">
-                    Duis aute irure dolor in reprehenderit in voluptate velit.
-                  </p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <img
+                  class="imf-crus-sect5"
+                  src="./public/images/event-private.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="w-50 d-flex flex-column gap-2 w-section5">
+                  <h3 class="text-white">Costume parties</h3>
+                  <span class="text-white fs-2 fw-bold prix-event"> $189 </span>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
                   <p class="text-white">
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
                   </p>
                 </div>
-                <p class="text-white">
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div> 
               </div>
             </div>
             <div class="carousel-item">
               <div class="d-flex gap-5 px-5 cont-mob">
-                  <img  class="imf-crus-sect5"
-                src="./public/images/event-birthday.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="w-50 d-flex flex-column gap-2 w-section5">
-                <h3 class="text-white">
-                  Costume parties
-                </h3>
-                <span class="text-white fs-2 fw-bold prix-event">
-                  $189
-                </span>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">
-                    Duis aute irure dolor in reprehenderit in voluptate velit.
-                  </p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <img
+                  class="imf-crus-sect5"
+                  src="./public/images/event-birthday.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="w-50 d-flex flex-column gap-2 w-section5">
+                  <h3 class="text-white">Costume parties</h3>
+                  <span class="text-white fs-2 fw-bold prix-event"> $189 </span>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
                   <p class="text-white">
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
                   </p>
                 </div>
-                <p class="text-white">
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div> 
               </div>
             </div>
             <div class="carousel-item">
               <div class="d-flex gap-5 px-5 cont-mob">
-                  <img  class="imf-crus-sect5"
-                src="./public/images/event-custom.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="w-50 d-flex flex-column gap-2 w-section5">
-                <h3 class="text-white">
-                  Costume parties
-                </h3>
-                <span class="text-white fs-2 fw-bold prix-event">
-                  $189
-                </span>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
-                  <p class="text-white">
-                    Duis aute irure dolor in reprehenderit in voluptate velit.
-                  </p>
-                </div>
-                <div class="d-flex gap-2">
-                  <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                <img
+                  class="imf-crus-sect5"
+                  src="./public/images/event-custom.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="w-50 d-flex flex-column gap-2 w-section5">
+                  <h3 class="text-white">Costume parties</h3>
+                  <span class="text-white fs-2 fw-bold prix-event"> $189 </span>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check2-all i-col icon-h-section2"></i>
+                    <p class="text-white">
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
                   <p class="text-white">
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
                   </p>
                 </div>
-                <p class="text-white">
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div> 
               </div>
             </div>
           </div>
@@ -655,17 +704,17 @@
             <span class="visually-hidden">Next</span>
           </button> -->
         </div>
-      
-      
       </div>
-    </section> 
+    </section>
     <!-- section 6  -->
     <section class="d-flex flex-column align-items-center containr-section6">
       <h4>Book A Table</h4>
       <h2>Book <span>a Table</span></h2>
       <div class="img-form">
         <div class="tchild-img-form"></div>
-        <form class="d-flex flex-column gap-3 pt-5 p-3 align-items-center form-section6">
+        <form
+          class="d-flex flex-column gap-3 pt-5 p-3 align-items-center form-section6"
+        >
           <div class="d-flex gap-3 mt-5 child-form-section6">
             <input type="text" placeholder="Your Name " />
             <input type="email" placeholder="Your Email" />
@@ -680,262 +729,317 @@
           <button>Book A Table</button>
         </form>
       </div>
-    </section> 
+    </section>
 
     <!-- section7 gallery -->
-    <section class="d-flex flex-column align-items-center container-section7">
-        <h4>Gallery</h4>
-        <h2>Some photos from  <span>Our Restaurant</span></h2>
-       <div class="images">
-        <div class="g-img1"></div>
-        <div class="g-img2"></div>
-        <div class="g-img3"></div>
-        <div class="g-img4"></div>
-        <div class="g-img5"></div>
-        <div class="g-img6"></div>
-        <div class="g-img7"></div>
-        <div class="g-img8"></div>
-
-       </div>
-      </section> 
-         <!-- section8 Chefs -->
-  <section class="d-flex flex-column align-items-center">
-        <h4>Chefs</h4>
-        <h2>Our Professional <span>Chefs</span></h2>
-       <div class="w-100 d-flex justify-content-center gap-4 mt-5 container-section8">
+    <section
+      id="Gallery"
+      class="d-flex flex-column align-items-center container-section7 "
+    >
+      <h4>Gallery</h4>
+      <h2>Some photos from <span>Our Restaurant</span></h2>
+      <div class="images">
+        <div class="g-img1 g-img"></div>
+        <div class="g-img2 g-img"></div>
+        <div class="g-img3 g-img"></div>
+        <div class="g-img4 g-img"></div>
+        <div class="g-img5 g-img"></div>
+        <div class="g-img6 g-img"></div>
+        <div class="g-img7 g-img"></div>
+        <div class="g-img8 g-img"></div>
+      </div>
+    </section>
+    <!-- section8 Chefs -->
+    <section id="Chefs" class="d-flex flex-column align-items-center">
+      <h4>Chefs</h4>
+      <h2>Our Professional <span>Chefs</span></h2>
+      <div
+        class="w-100 d-flex justify-content-center gap-4 mt-5 container-section8"
+      >
         <div class="w-25 position-relative child-section8">
-            <img src="./public/images/chefs/chefs-1.jpg" alt="" class="w-100">
-            <div class="cart-shef">
-                <p class="fw-bold">Walter White</p>
-                <div class="d-flex justify-content-between">
-                    <p class="fs-6"><i>Master Chef</i>          </p>
-                    <div>
-                        <i class="bi bi-twitter-x text-secondary"></i>
-                        <i class="bi bi-facebook text-secondary"></i>
-                        <i class="bi bi-instagram text-secondary"></i>
-                        <i class="bi bi-linkedin text-secondary"></i>
-                    </div>
-                </div>
-            </div>
-           </div>
-           <div class="w-25 position-relative child-section8">
-            <img src="./public/images/chefs/chefs-2.jpg" alt="" class="w-100">
-            <div class="cart-shef">
-                <p class="fw-bold">Walter White</p>
-                <div class="d-flex justify-content-between">
-                    <p class="fs-6"><i>Master Chef</i>          </p>
-                    <div>
-                        <i class="bi bi-twitter-x text-secondary"></i>
-                        <i class="bi bi-facebook text-secondary"></i>
-                        <i class="bi bi-instagram text-secondary"></i>
-                        <i class="bi bi-linkedin text-secondary"></i>
-                    </div>
-                </div>
-            </div>
-           </div>
-           <div class="w-25 position-relative child-section8">
-            <img src="./public/images/chefs/chefs-3.jpg" alt="" class="w-100">
-            <div class="cart-shef">
-                <p class="fw-bold">Walter White</p>
-                <div class="d-flex justify-content-between">
-                    <p class="fs-6"><i>Master Chef</i>          </p>
-                    <div>
-                        <i class="bi bi-twitter-x text-secondary"></i>
-                        <i class="bi bi-facebook text-secondary"></i>
-                        <i class="bi bi-instagram text-secondary"></i>
-                        <i class="bi bi-linkedin text-secondary"></i>
-                    </div>
-                </div>
-            </div>
-           </div>
-       </div>
-
-       
-      </section> 
-      <!-- section9  -->
-      <section class="section9">
-        <div class="childe-srction9 d-flex justify-content-center">
-
-            
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active pt-5">
-                    <div class="d-flex flex-column align-items-center  img-section9 gap-3 justify-content-end ">
-                        <img src="./public/images/testimonials/testimonials-1.jpg" alt="" >
-                        <h3 class="text-white">Sara Wilsson</h3>
-                    <h3 class="fs-5 text-secondary">Freelancer</h3>
-                   <div>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                   </div>
-                        <p class="text-white text-center w-75">
-                            <i class="bi bi-quote quote-icon-left text-white"></i>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                            <i class="bi bi-quote quote-icon-right text-white"></i>
-                          </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item pt-5">
-                    <div class="d-flex flex-column align-items-center img-section9 gap-3 justify-content-center">
-                        <img src="./public/images/testimonials/testimonials-3.jpg" alt="" >
-                        <h3 class="text-white">Sara Wilsson</h3>
-                    <h3 class="fs-5 text-secondary">Freelancer</h3>
-                   <div>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                   </div>
-                        <p class="text-white text-center w-75">
-                            <i class="bi bi-quote quote-icon-left text-white"></i>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                            <i class="bi bi-quote quote-icon-right text-white"></i>
-                          </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item pt-5">
-                    <div class="d-flex flex-column align-items-center  img-section9 gap-3 justify-content-center ">
-                        <img src="./public/images/testimonials/testimonials-2.jpg" alt="" >
-                        <h3 class="text-white">Sara Wilsson</h3>
-                    <h3 class="fs-5 text-secondary">Freelancer</h3>
-                   <div>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                   </div>
-                        <p class="text-white text-center w-75">
-                            <i class="bi bi-quote quote-icon-left text-white"></i>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                            <i class="bi bi-quote quote-icon-right text-white"></i>
-                          </p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          <img src="./public/images/chefs/chefs-1.jpg" alt="" class="w-100" />
+          <div class="cart-shef">
+            <p class="fw-bold">Walter White</p>
+            <div class="d-flex justify-content-between">
+              <p class="fs-6"><i>Master Chef</i></p>
+              <div>
+                <i class="bi bi-twitter-x text-secondary"></i>
+                <i class="bi bi-facebook text-secondary"></i>
+                <i class="bi bi-instagram text-secondary"></i>
+                <i class="bi bi-linkedin text-secondary"></i>
               </div>
-            
-        </div>
-       
-
-       
-      </section> 
-      <!-- section10 Contact -->
-      <section class="d-flex flex-column align-items-center">
-        <h4>Contact</h4>
-        <h2>Check Our <span>Contact</span></h2>
-        <iframe class="w-100 mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0584384950866!2d-7.531276774991623!3d33.60378817332909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdb2f812837f%3A0xbbcfc74fbc11b2d9!2sLionsGeek!5e0!3m2!1sar!2sma!4v1744673249407!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-            
-        
-        <div class="contact">
-            <div class="left-contact">
-                <h3>Get in touch</h3>
-                <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
-                <div class=" child-left-contact">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                      <h5>Location:</h5>
-                      <p>A108 Adam Street, New York, NY 535022</p>
-                    </div>
-                  </div>
-                  <div class=" child-left-contact email">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div >
-                      <h5>Email:</h5>
-                      <p>info@example.com</p>
-                    </div>
-                  </div>
-                  <div class=" child-left-contact">
-                    <i class="bi bi-phone flex-shrink-0"></i>
-                    <div>
-                      <h5>Call:</h5>
-                      <p>+1 5589 55488 55</p>
-                    </div>
-                  </div>
             </div>
-            
-            <form class="right-contact" action="">
-                <div class="child-right">
-                    <input type="text" placeholder="Your Name " />
-                    <input type="email" placeholder="Your Email" />
-                </div>
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <button>Send Message</button>
-            </form>
-           
+          </div>
         </div>
-
-       
-
-       
-      </section> 
-      <!-- footer -->
-      <footer class="d-flex flex-column align-items-center mt-5 pt-5  " style="background-color: rgb(44, 19, 6);">
-        <div class=" d-flex justify-content-between gap-5 border-bottom pb-4 info-foter" >
-            <div class=" d-flex gap-3  ">
-                <span><i class="bi bi-geo-alt flex-shrink-0"></i></span>
+        <div class="w-25 position-relative child-section8">
+          <img src="./public/images/chefs/chefs-2.jpg" alt="" class="w-100" />
+          <div class="cart-shef">
+            <p class="fw-bold">Walter White</p>
+            <div class="d-flex justify-content-between">
+              <p class="fs-6"><i>Master Chef</i></p>
+              <div>
+                <i class="bi bi-twitter-x text-secondary"></i>
+                <i class="bi bi-facebook text-secondary"></i>
+                <i class="bi bi-instagram text-secondary"></i>
+                <i class="bi bi-linkedin text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-25 position-relative child-section8">
+          <img src="./public/images/chefs/chefs-3.jpg" alt="" class="w-100" />
+          <div class="cart-shef">
+            <p class="fw-bold">Walter White</p>
+            <div class="d-flex justify-content-between">
+              <p class="fs-6"><i>Master Chef</i></p>
+              <div>
+                <i class="bi bi-twitter-x text-secondary"></i>
+                <i class="bi bi-facebook text-secondary"></i>
+                <i class="bi bi-instagram text-secondary"></i>
+                <i class="bi bi-linkedin text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section9  -->
+    <section class="section9">
+      <div class="childe-srction9 d-flex justify-content-center">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active pt-5">
+              <div
+                class="d-flex flex-column align-items-center img-section9 gap-3 justify-content-end"
+              >
+                <img
+                  src="./public/images/testimonials/testimonials-1.jpg"
+                  alt=""
+                />
+                <h3 class="text-white">Sara Wilsson</h3>
+                <h3 class="fs-5 text-secondary">Freelancer</h3>
                 <div>
-                  <h5 class="text-white">Address:</h5>
-                  <p class="text-white" class="w-75">A108 Adam Street, New York, NY 535022</p>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
                 </div>
+                <p class="text-white text-center w-75">
+                  <i class="bi bi-quote quote-icon-left text-white"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                  <i class="bi bi-quote quote-icon-right text-white"></i>
+                </p>
+              </div>
             </div>
-            <div class=" d-flex gap-3 pb-3 ">
-                    <span><i class="bi bi-telephone icon fs"></i></span>
-                    <div class="pb-3 ">
-                      <h5 class="text-white">Contact</h5>
-                      <p class="text-white"><b>Phone:</b>  +1 5589 55488 55</p>
-                      <p class="text-white"><b>Email:</b> info@example.com</p>
-                    </div>
-            </div>
-            <div class=" d-flex gap-3 ">
-                <span><i class="bi bi-clock icon "></i></span>
+            <div class="carousel-item pt-5">
+              <div
+                class="d-flex flex-column align-items-center img-section9 gap-3 justify-content-center"
+              >
+                <img
+                  src="./public/images/testimonials/testimonials-3.jpg"
+                  alt=""
+                />
+                <h3 class="text-white">Sara Wilsson</h3>
+                <h3 class="fs-5 text-secondary">Freelancer</h3>
                 <div>
-                  <h5 class="text-white">Opening Hours</h5>
-                  <p class="text-white"><b>Mon-Sat:</b>   11AM - 23PM</p>
-                  <p class="text-white"><b>Sunday:</b>  Closed</p>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
                 </div>
+                <p class="text-white text-center w-75">
+                  <i class="bi bi-quote quote-icon-left text-white"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                  <i class="bi bi-quote quote-icon-right text-white"></i>
+                </p>
+              </div>
             </div>
-            <div class=" d-flex  ">
-                    
-                    <div>
-                      <h5 class="text-white">Follow Us</h5>
-                      <div class="d-flex gap-3">
-                        <i  class="bi bi-twitter-x text-secondary text-white"></i>
-                        <i class="bi bi-facebook text-secondary text-white"></i>
-                        <i class="bi bi-instagram text-secondary text-white"></i>
-                        <i class="bi bi-linkedin text-secondary text-white"></i>
-                      </div>
-                    </div>
-                 </div>
-              
+            <div class="carousel-item pt-5">
+              <div
+                class="d-flex flex-column align-items-center img-section9 gap-3 justify-content-center"
+              >
+                <img
+                  src="./public/images/testimonials/testimonials-2.jpg"
+                  alt=""
+                />
+                <h3 class="text-white">Sara Wilsson</h3>
+                <h3 class="fs-5 text-secondary">Freelancer</h3>
+                <div>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="text-white text-center w-75">
+                  <i class="bi bi-quote quote-icon-left text-white"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                  <i class="bi bi-quote quote-icon-right text-white"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev d-none"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next d-none"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        
-        <div class="d-flex flex-column align-items-center pt-5">
-            <p class="text-white">© Copyright Delicious All Rights Reserved</p>
-            <p class="text-white">Designed by <span>BootstrapMade</span></p>
+      </div>
+    </section>
+    <!-- section10 Contact -->
+    <section id="Contact" class="d-flex flex-column align-items-center">
+      <h4>Contact</h4>
+      <h2>Check Our <span>Contact</span></h2>
+      <iframe
+        class="w-100 mt-5"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0584384950866!2d-7.531276774991623!3d33.60378817332909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdb2f812837f%3A0xbbcfc74fbc11b2d9!2sLionsGeek!5e0!3m2!1sar!2sma!4v1744673249407!5m2!1sar!2sma"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="contact">
+        <div class="left-contact">
+          <h3>Get in touch</h3>
+          <p>
+            Et id eius voluptates atque nihil voluptatem enim in tempore minima
+            sit ad mollitia commodi minus.
+          </p>
+          <div class="child-left-contact">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h5>Location:</h5>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="child-left-contact email">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h5>Email:</h5>
+              <p>info@example.com</p>
+            </div>
+          </div>
+          <div class="child-left-contact">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h5>Call:</h5>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
         </div>
-      </footer>  
 
+        <form class="right-contact" action="">
+          <div class="child-right">
+            <input type="text" placeholder="Your Name " />
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="d-flex flex-column align-items-center mt-5 pt-5"
+      style="background-color: rgb(44, 19, 6)"
+    >
+      <div
+        class="d-flex justify-content-between gap-5 border-bottom pb-4 info-foter"
+      >
+        <div class="d-flex gap-3">
+          <span><i class="bi bi-geo-alt flex-shrink-0"></i></span>
+          <div>
+            <h5 class="text-white">Address:</h5>
+            <p class="text-white" class="w-75">
+              A108 Adam Street, New York, NY 535022
+            </p>
+          </div>
+        </div>
+        <div class="d-flex gap-3 pb-3">
+          <span><i class="bi bi-telephone icon fs"></i></span>
+          <div class="pb-3">
+            <h5 class="text-white">Contact</h5>
+            <p class="text-white"><b>Phone:</b> +1 5589 55488 55</p>
+            <p class="text-white"><b>Email:</b> info@example.com</p>
+          </div>
+        </div>
+        <div class="d-flex gap-3">
+          <span><i class="bi bi-clock icon"></i></span>
+          <div>
+            <h5 class="text-white">Opening Hours</h5>
+            <p class="text-white"><b>Mon-Sat:</b> 11AM - 23PM</p>
+            <p class="text-white"><b>Sunday:</b> Closed</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div>
+            <h5 class="text-white">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <i class="bi bi-twitter-x text-secondary text-white"></i>
+              <i class="bi bi-facebook text-secondary text-white"></i>
+              <i class="bi bi-instagram text-secondary text-white"></i>
+              <i class="bi bi-linkedin text-secondary text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="d-flex flex-column align-items-center pt-5">
+        <p class="text-white">© Copyright Delicious All Rights Reserved</p>
+        <p class="text-white">Designed by <span>BootstrapMade</span></p>
+      </div>
+    </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>

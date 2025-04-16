@@ -71,11 +71,21 @@
     #Starters
         &:checked ~ .menu9
           display: none !important
+    .title-menu
+      position: relative
+      &::after
+        content: "............................................"
+        color: #bbbbbb
+        position: absolute
   @media   ( max-width: 425px )
     .menu-section3
       grid-template-columns: auto
       grid-template-rows: repeat(9 , auto)
       padding: 10px
+    .title-menu
+      &::after
+        content: "......................"
+        
     
     
         

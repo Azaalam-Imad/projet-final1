@@ -8,6 +8,39 @@
 
 .bi-check2-all
     color: #fd7e14
+.play-section1
+    position: absolute
+    right:  50% !important
+    top: 50% !important
+    transform: translate(50% ,-50%)
+    border: 2px solid #fd7e14 
+    border-radius: 50%
+    width: 90px
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+    animation: play 2s infinite
+
+    i
+      color: #fd7e14 !important
+      font-size: 70px !important 
+@keyframes play
+    0%
+
+        width: 90px
+        height: 90px
+
+        
+    100%
+        width: 120px
+        height: 120px
+        
+      
+            
+            
+        
+
 @media   ( max-width: 425px  )
     .child-h-section2
         flex-direction:  column

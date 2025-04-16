@@ -11879,6 +11879,71 @@ section {
   gap: 10px;
 }
 
+.img-section1 {
+  animation: animationA;
+  animation-timeline: view();
+}
+
+@keyframes animationA {
+  0% {
+    transform: translate(-50%);
+  }
+  70% {
+    transform: translate(0);
+  }
+}
+.card {
+  animation: animationB;
+  animation-timeline: view();
+}
+
+@keyframes animationB {
+  0% {
+    transform: rotateY(100deg);
+  }
+  81% {
+    transform: rotateY(0deg);
+  }
+}
+.aimation2 {
+  animation: animationB;
+  animation-timeline: view();
+}
+
+@keyframes animationB {
+  0% {
+    transform: rotateY(100deg);
+  }
+  81% {
+    transform: rotateY(0deg);
+  }
+}
+.animation3 {
+  animation: animationC;
+  animation-timeline: view();
+}
+
+@keyframes animationC {
+  0% {
+    transform: translateX(-50%);
+  }
+  51% {
+    transform: translateX(0);
+  }
+}
+.g-img {
+  animation: animationD;
+  animation-timeline: view();
+}
+
+@keyframes animationD {
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 100%;
+  }
+}
 nav {
   height: 10vh;
   width: 100vw;
@@ -11897,11 +11962,11 @@ nav .logo img {
   0% {
     background-color: transparent;
   }
-  20% {
-    background-color: rgba(0, 0, 0, 0.7254901961);
+  10% {
+    background-color: rgba(0, 0, 0, 0.9254901961);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.7254901961);
+    background-color: rgba(0, 0, 0, 0.8470588235);
   }
 }
 .links a {
@@ -12030,6 +12095,35 @@ nav .logo img {
   color: #fd7e14;
 }
 
+.play-section1 {
+  position: absolute;
+  right: 50% !important;
+  top: 50% !important;
+  transform: translate(50%, -50%);
+  border: 2px solid #fd7e14;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: play 2s infinite;
+}
+.play-section1 i {
+  color: #fd7e14 !important;
+  font-size: 70px !important;
+}
+
+@keyframes play {
+  0% {
+    width: 90px;
+    height: 90px;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+  }
+}
 @media (max-width: 425px) {
   .child-h-section2 {
     flex-direction: column;
@@ -12169,15 +12263,28 @@ span {
   display: none !important;
 }
 
+.title-menu {
+  position: relative;
+}
+.title-menu::after {
+  content: "............................................";
+  color: #bbbbbb;
+  position: absolute;
+}
+
 @media (max-width: 425px) {
   .menu-section3 {
     grid-template-columns: auto;
     grid-template-rows: repeat(9, auto);
     padding: 10px;
   }
+  .title-menu::after {
+    content: "......................";
+  }
 }
 .container-special {
   height: 45vh !important;
+  background-color: white !important;
 }
 
 .specials1 {
@@ -12193,8 +12300,10 @@ span {
 }
 
 .specials2 {
-  width: 60vw !important;
+  width: 62vw !important;
   position: absolute;
+  background-color: white !important;
+  padding: 10px !important;
   z-index: 0;
 }
 
@@ -12229,6 +12338,8 @@ span {
 @media (max-width: 425px) {
   .container-special {
     flex-direction: column !important;
+    height: auto !important;
+    padding: unset !important;
   }
   .specials1 {
     border: unset !important;
@@ -12243,10 +12354,25 @@ span {
     width: 100% !important;
   }
   .cont-section4 {
-    width: 100% !important;
+    width: 100vw !important;
+    padding: unset !important;
+  }
+  .cont-section4 h3, .cont-section4 .h3 {
+    padding-inline-start: 40px !important;
+    background-color: white !important;
   }
   .cont-section4 p {
     padding: unset !important;
+    padding-inline-start: 40px !important;
+  }
+  .Specials {
+    background-color: red;
+    width: 100vw !important;
+    height: auto !important;
+  }
+  .siz {
+    width: 100vw;
+    height: 50rem;
   }
 }
 .event {
@@ -12302,7 +12428,6 @@ span {
 @media (max-width: 425px) {
   .event {
     height: auto !important;
-    margin-top: 160vh !important;
     background-size: 100% 100%;
   }
   .filtr-evnt {
