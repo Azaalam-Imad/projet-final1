@@ -11925,10 +11925,10 @@ section {
 
 @keyframes animationC {
   0% {
-    transform: translateX(-50%);
+    transform: translate(-50%);
   }
-  51% {
-    transform: translateX(0);
+  31% {
+    transform: translate(0);
   }
 }
 .g-img {
