@@ -12710,7 +12710,7 @@ textarea {
 
 .right-contact {
   width: 60vw;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
